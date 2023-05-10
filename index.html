@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- <nav class="navBar">
+        <div class="d-flex m-auto col-md-9  align-items-center justify-content-between ">
+            <button class="btn ubdate">Add new Product</button>
+        </div>
+    </nav> -->
+   
+    <div class="container ">
+       
+        <div onclick="formAddProduct()" id="buttomAdd" class="d-none d-flex m-auto col-md-9 mt-5  align-items-center justify-content-center ">
+            <button class="btn ubdate">Add new Product</button>
+        </div>
+        <div id="FormAdd" class="col-md-9  bgForm px-5 py-3 m-auto my-5">
+            
+            <div onclick="closeProduct()" id="buttonClose" class="d-flex cursor justify-content-end pt-2 fs-2">
+                <i class="fa-solid fa-circle-xmark" style="color: #0a3c46;"></i>
+            </div>
+            <div class="  mb-3">
+                <label  class="fw-bold mb-1">Product Name:</label>
+                <input type="text" class="form-control " id="productName">
+                <div id="alertName" class="alert-danger d-none p-3 rounded-3  ">
+                    <h6>Product Name is empty</h6>
+                </div>
+            </div>
+
+            <div class="  my-3">
+                <label  class="fw-bold mb-1">Product Price:</label>
+                <input type="text" class="form-control "  id="productPrice">
+                <div id="alertPrice" class="alert-danger d-none p-3 rounded-3  ">
+                    <h6>Product Price is empty</h6>
+                </div>
+            </div>
+
+
+            <div class="  my-3">
+                <label  class="fw-bold mb-1">Product Category:</label>
+                <input type="text" class="form-control "  id="productCategory">
+                <div id="alertCategory" class="alert-danger d-none p-3 rounded-3  ">
+                    <h6>Product Category is empty</h6>
+                </div>
+            </div>
+
+
+            <div class="  mb-3">
+                <label  class="fw-bold mb-1">Product Dec :</label>
+                <textarea name="" class="form-control "  id="productDec"></textarea>
+                <div id="alertDec" class="alert-danger d-none p-3 rounded-3  ">
+                    <h6>Product Dec is empty</h6>
+                </div>
+            </div>
+
+
+           
+            <div id="addProduct" onclick="addProduct()"  class="m-auto d-flex justify-content-center">
+                <button class="btn  ubdate py-2 btn-outline-light ">add Product</button> 
+            </div>
+            <div id="ubdateProduct" onclick="ubdateProduct()"  class="m-auto d-none justify-content-center">
+                <button class="btn  ubdate py-2 btn-outline-light ">Ubdate Product</button> 
+            </div> 
+            
+            <div id="exiteAlert" class="alert-danger mt-2 d-none text-center p-3 ">
+                <h6>This Product Alredly Exite</h6>
+            </div>
+           
+        </div>
+     
+        <div class=" col-md-9 m-auto mt-5">
+            <input   type="text" class="form-control borderSearch m-auto w-75 mt-5 mb-3"
+             id="productSearch" oninput="searchProduct(this.value)"
+              placeholder="Search By Name.. " >
+            <table class="table bgBroduct  " >
+                <thead class="fw-bold  align-items-center">
+                    <th class="borderStart">Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Ubdate</th>
+                    <th class="borderEnd">Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                   
+                </tbody>
+            </table>
+   
+        </div>
+
+    </div>
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+<th></th>
+<!-- <button onclick="setForm(${i})" class="btn ubdate">Ubdate</button> -->
+
+<!-- <div class="d-flex  col-md-9 m-auto bg-danger text-center align-items-center justify-content-between ">
+    <div class="col-md-8">
+        <input type="text" class="form-control  m-auto my-3" id="productSearch" oninput="searchProduct(this.value)" placeholder="Search By Name..">
+
+    </div>
+    <div class="col-md-4">
+        <button class="btn ubdate">Add new Product</button>
+
+    </div>
+
+</div> -->
+   <!-- <i class="fa-solid fa-magnifying-glass" style="color: #0a3c46;"></i> -->
